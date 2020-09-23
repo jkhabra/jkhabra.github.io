@@ -6,7 +6,7 @@ config = "config.toml"
 theme = "osprey"
 canonifyURLS = true
 googleAnalytics = ""
-disqusShortname = "jay"
+disqusShortname = "jkhabra"
 
 [Params]
   tagline = "Jay Khabra"
@@ -15,15 +15,15 @@ disqusShortname = "jay"
   logoBig = "/images/jay.png"
   logoSmall = "/images/jay.png"
   favicon = "/images/favicon.ico"
-  opengraphImage = "/images/jay.png"
+  opengraphImage = "/images/me.jpg"
   email = "jkhabra09@gmail.com"
   googleTagManger = ""
   customCSS = false
 
   # Social media links in footer
   twitter = "KhabraJay"
-  linkedin = "jatinder-khabra"
-  github = "jkhara"
+  linkedin = "jatinder-khabra-39070310a"
+  github = "jkhabra"
   facebook = ""
 
   # Copyright and theme author credit in footer
