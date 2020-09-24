@@ -1,6 +1,6 @@
 +++
 date = "2020-03-15T21:57:17-08:00"
-title = "Aduro Pharmacy App"
+title = "Pharmacy App"
 image = "pharmacy.png"
 alt = "Pharmacy App - is a mobile app and built for android and ios. In this app users can book pharmacies."
 color = "#a30f44"

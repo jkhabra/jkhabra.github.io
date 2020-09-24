@@ -13,6 +13,4 @@ let languages = ['javascript', 'python'],
     skillset = languages.concat(frameworks, tools)
 ```
 
-View my code on [GitHub](https://github.com/jkhabra), connect with me on
-[LinkedIn](https://www.linkedin.com/in/jatinder-khabra-39070310a/), checkout my resume [here](https://docs.google.com/document/d/1iODoTx52IioaIlx3ijGbkK7m7GHRjPoLhPokDT4PdEY/edit), follow me on
-[Twitter](https://twitter.com/khabrajay), and check out my work below.
+View my code on [GitHub](https://github.com/jkhabra), connect with me on [LinkedIn](https://www.linkedin.com/in/jatinder-khabra-39070310a/), follow me on [Twitter](https://twitter.com/khabrajay), and check out my work below.

@@ -1,10 +1,10 @@
 +++
 date = "2019-01-15T21:57:17-12:00"
-title = "Lettertab (chrome extensions)"
-image = "lettertab.jpeg"
-alt = "Lettertab - is a community-curated feed of the most loved and read newsletters online"
+title = "WallFeed (chrome extensions)"
+image = "wallfeed.png"
+alt = "WallFeed - is a community-curated feed of the most loved and read newsletters online"
 color = "#fff"
-link1 = "https://chrome.google.com/webstore/detail/lettertab/oalndcjnmngdhchgekhjklhdlmkoohhb?utm_source=chrome-ntp-icon"
+link1 = ""
 category = ["Professional Project"]
 tag = ["Web Development", "API Development", "React", "Chrome Extensions"]
 projectDate = "Early 2020"
@@ -12,7 +12,7 @@ projectDate = "Early 2020"
 
 ## Summary
 
-Lettertab is a chrome extension. In this extension users can see posts and users can suggest the post url to admin. Admin can approve/reject users suggestions and if admin approves the suggestion then post displays on the home page. In Lettertab users can search posts, sort posts with views, sort with share and sort with tags.
+WallFeed is a chrome extension. In this extension users can see posts and users can suggest the post url to admin. Admin can approve/reject users suggestions and if admin approves the suggestion then post displays on the home page. In Lettertab users can search posts, sort posts with views, sort with share and sort with tags.
 
 ## Responsibilities
 
