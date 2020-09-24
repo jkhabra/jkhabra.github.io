@@ -1,31 +1,76 @@
-<!doctype html><html lang=en-us><head><title>Setting up site with Hugo and github actions | Jay Khabra - Full Stack Developer</title><meta name=title content="Setting up site with Hugo and github actions | Jay Khabra - Full Stack Developer"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="chrome=1"><meta name=HandheldFriendly content="True"><meta name=MobileOptimized content="320"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=referrer content="no-referrer-when-downgrade"><base href><meta name=description content="Full-stack web developer and UI/UX enthusiast based in Mohali, Punjabi."><meta name=author content="Toma Nistor"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@KhabraJay"><meta name=twitter:creator content="@KhabraJay"><meta property="og:title" content="Setting up site with Hugo and github actions | Jay Khabra - Full Stack Developer"><meta property="og:type" content="website"><meta property="og:url" content><meta property="og:image" content="/images/me.jpg"><meta property="og:description" content="Full-stack web developer and UI/UX enthusiast based in Mohali, Punjabi."><link rel=icon type=image/png sizes=16x16 href=/images/favicon.ico><meta name=theme-color content="#FFF"><link rel=canonical href=/blog/hugoisforlovers/><link rel=stylesheet href=/style.3d9ed0c8ed4a7de59d1a99f6c56fa9ab43daaa5b8951f2082b11faa9417532b8.css type=text/css><style>.lazyload{opacity:.0001}.logo .lazyload{min-width:10em}</style><script src=/js/vendor/lazysizes.min.js async></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css></head><body><nav class="row middle-xs center-xs"><div class="col-xs-6 col-sm-1 logo"><a href=/#><img data-src=/images/jay.png class=lazyload lazyload=on alt="Jay Khabra - Full Stack Developer"></a></div><div class="col-xs-3 col-sm-2"><h3><a href=/#about>About</a></h3></div><div class="col-xs-3 col-sm-2"><h3><a href=/#work>Work</a></h3></div><div class="col-xs-3 col-sm-2"><h3><a href=/#blog>Blog</a></h3></div><div class="col-xs-3 col-sm-2"><h3><a href=/#contact>Contact</a></h3></div><div class="col-xs-6 col-sm-1 nav-toggle"><a href class=nav-icon onclick="return false"><img data-src=/images/icon-menu.png class=lazyload lazyload=on alt="Open Menu">
-<img data-src=/images/icon-x.png class=lazyload lazyload=on alt="Close Menu" style=display:none></a></div></nav><section class="nav-full row middle-xs center-xs"><div class=col-xs-12><div class="row middle-xs center-xs"><div class=col-xs-12><h1><a href=/#about>About</a></h1></div><div class=col-xs-12><h1><a href=/#work>Work</a></h1></div><div class=col-xs-12><h1><a href=/#blog>Blog</a></h1></div><div class=col-xs-12><h1><a href=/#contact>Contact</a></h1></div></div></div></section><main><section class=container><section class=content><h1>Setting up site with Hugo and github actions</h1><div class=sub-header>April 2, 2014 · 2 minutes read</div><article class=entry-content><h2 id=step-1-install-hugo>Step 1. Install Hugo</h2><p>Goto <a href=https://github.com/spf13/hugo/releases>hugo releases</a> and download the
-appropriate version for your os and architecture.</p><p>Save it somewhere specific as we will be using it in the next step.</p><p>More complete instructions are available at <a href=/overview/installing/>installing hugo</a></p><h2 id=step-2-build-the-docs>Step 2. Build the Docs</h2><p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p><p>Follow the following steps:</p><ol><li>Clone the <a href=http://github.com/spf13/hugo>hugo repository</a></li><li>Go into the repo</li><li>Run hugo in server mode and build the docs</li><li>Open your browser to http://localhost:1313</li></ol><p>Corresponding pseudo commands:</p><pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
-</code></pre><p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p><h2 id=step-3-change-the-docs-site>Step 3. Change the docs site</h2><p>Stop the Hugo process by hitting ctrl+c.</p><p>Now we are going to run hugo again, but this time with hugo in watch mode.</p><pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre><p>Open your <a href=http://vim.spf13.com>favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p><p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p><p>Change and save this file.. Notice what happened in your terminal.</p><pre><code>&gt; Change detected, rebuilding site
+<!doctype html><html lang=en-us><head><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-175668351-2','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script><title>How I utilize Github actions to automate my personal site | Jay Khabra - Full Stack Developer</title><meta name=title content="How I utilize Github actions to automate my personal site | Jay Khabra - Full Stack Developer"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="chrome=1"><meta name=HandheldFriendly content="True"><meta name=MobileOptimized content="320"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=referrer content="no-referrer-when-downgrade"><base href><meta name=description content="How I utilize GitHub actions to automate my personal (blog) site. Just a push to Github, then github handles its deployment by itself. Neat, isn't it!"><meta name=author content="Toma Nistor"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@KhabraJay"><meta name=twitter:creator content="@KhabraJay"><meta property="og:title" content="How I utilize Github actions to automate my personal site | Jay Khabra - Full Stack Developer"><meta property="og:type" content="website"><meta property="og:url" content><meta property="og:image" content="/images/me.jpg"><meta name=og:description content="How I utilize GitHub actions to automate my personal (blog) site. Just a push to Github, then github handles its deployment by itself. Neat, isn't it!"><link rel=icon type=image/png sizes=16x16 href=/images/favicon.ico><meta name=theme-color content="#FFF"><link rel=canonical href=/blog/utilize-github-actions/><link rel=stylesheet href=/style.3d9ed0c8ed4a7de59d1a99f6c56fa9ab43daaa5b8951f2082b11faa9417532b8.css type=text/css><style>.lazyload{opacity:.0001}.logo .lazyload{min-width:10em}</style><script src=/js/vendor/lazysizes.min.js async></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css></head><body><nav class="row middle-xs center-xs"><div class="col-xs-6 col-sm-1 logo"><a href=/#><img data-src=/images/jay.png class=lazyload lazyload=on alt="Jay Khabra - Full Stack Developer"></a></div><div class="col-xs-3 col-sm-2"><h3><a href=/#about>About</a></h3></div><div class="col-xs-3 col-sm-2"><h3><a href=/#work>Work</a></h3></div><div class="col-xs-3 col-sm-2"><h3><a href=/#blog>Blog</a></h3></div><div class="col-xs-3 col-sm-2"><h3><a href=/#contact>Contact</a></h3></div><div class="col-xs-6 col-sm-1 nav-toggle"><a href class=nav-icon onclick="return false"><img data-src=/images/icon-menu.png class=lazyload lazyload=on alt="Open Menu">
+<img data-src=/images/icon-x.png class=lazyload lazyload=on alt="Close Menu" style=display:none></a></div></nav><section class="nav-full row middle-xs center-xs"><div class=col-xs-12><div class="row middle-xs center-xs"><div class=col-xs-12><h1><a href=/#about>About</a></h1></div><div class=col-xs-12><h1><a href=/#work>Work</a></h1></div><div class=col-xs-12><h1><a href=/#blog>Blog</a></h1></div><div class=col-xs-12><h1><a href=/#contact>Contact</a></h1></div></div></div></section><main><section class=container><section class=content><h1>How I utilize Github actions to automate my personal site</h1><div class=sub-header>September 24, 2020 · 3 minutes read</div><article class=entry-content><p>I have created this site in <a href=https://gohugo.io/>Hugo</a>. The purpose of this site
+to showcase my work, skills and share my thoughts. Hugo is one of the most
+popular open-source static site generators. I chose hugo because there is big
+range of free Hugo themes available. I didn&rsquo;t want to invest too much in
+creating the theme myself. I chose <em>osprey</em> theme written by
+<a href=https://github.com/tomanistor/osprey>tomanistor</a>, which I found very pleasing.</p><p>Using hugo is easy enough, but I wanted a completely effort-less development
+environment like we have in <a href=https://github.com/sosinc/sos-app>SoS app</a>. SoS
+app allows me to run a single command, and just focus on development rather than
+wasting time on how to setup things. To get similar development experience, I
+chose to dockerize my local setup.</p><p>With little effort and my experience from SoS app, I wrote this
+<code>docker-compose.yml</code> file:</p><pre><code>version: '3'
 
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre><p>Refresh the browser and observe that the typo is now fixed.</p><p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p><h2 id=step-4-have-fun>Step 4. Have fun</h2><p>The best way to learn something is to play with it.</p></article><div class=pagination></div></section><br><section class=disqus><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")
+services:
+  hugo:
+    container_name: hugo
+    image: &quot;peaceiris/hugo:v0.74.2&quot;
+    ports:
+      - 1313:1313
+    volumes:
+      - ${PWD}:/src
+    command:
+      - server
+      - --bind=0.0.0.0
+      - --buildDrafts
+      - --disableFastRender
+</code></pre><p>With this, I don&rsquo;t even had to install hugo on my system. Following instructions
+on <a href=https://github.com/tomanistor/osprey/>osprey repo</a> to set it up, and just
+running <code>docker-compose</code> up is enough to get my site running locally!</p><h2 id=using-github-actions>Using GitHub Actions</h2><p><img src=/images/blog/githubActions2.jpg alt="GitHub Actions"></p><p>Another thing I learned (and loved) during development of SoS App is continuous
+deployment. Just making a push to github, and seeing it going live without
+moving a finger is magical! I wanted same for my personal site as well.</p><p>I chose Github actions to do that, because they are awesome (and free). So I
+created a <code>.github/workflows/</code> directory, and created a workflow in it, which:</p><ol><li>Gets triggered whenever something is pushed to <code>source</code> branch. Since I am
+using github-pages to deploy my site, I can&rsquo;t use the <code>master</code> branch. I&rsquo;ve
+configured github-pages to pick final HTML from master branch</li><li>It sets hugo up using <code>peaceiris/actions-hugo</code> github action. Beauty of
+github-actions is that it is possible to use community created actions, saving
+you a ton of time</li><li>Finally, build the site using hugo, and push the built content to <code>master</code>
+branch, which github-pages can then publish</li></ol><p>If there is any error, the github action just fails, so no need to worry in case
+of any failure, it won&rsquo;t effect the site. Here&rsquo;s the github workflow I created:</p><pre><code>name: Github Pages
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.74.2'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+</code></pre><h2 id=why-to-use-github-for-hosting>Why to use GitHub for hosting</h2><p>GitHub allows you to serve any static website straight from your repository.
+Github pages support custom domains as well. So a static website can be hosted
+free of charge and gets infinite scalability thanks to Github&rsquo;s infrastructure!</p><h2 id=have-fun>Have fun</h2><p>The best way to learn something is to play with it. I wanted to try using Github
+actions without guidance, and setting up my own website provided a very good
+playground for it. It was a lot of fun setting it up, and a lot easier than I
+expected.</p></article><div class=pagination></div></section><br><section class=disqus><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")
 return;var disqus_shortname='jkhabra';var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view comments powered by <a href=http://disqus.com/?ref_noscript>Disqus</a>.</noscript></section></section></main><footer class="row middle-xs center-xs"><div class="col-xs-3 col-md-2"><a target=_blank rel=noopener href=https://github.com/jkhabra>GitHub</a></div><div class="col-xs-3 col-md-2"><a target=_blank rel=noopener href=https://linkedin.com/in/jatinder-khabra-39070310a>LinkedIn</a></div><div class="col-xs-3 col-md-2"><a target=_blank rel=noopener href=https://twitter.com/KhabraJay>Twitter</a></div><div class=col-xs-12>Copyright &copy; 2020 Jay Khabra - Full Stack Developer.</div></footer><div id=modal-6209 class=modal><div class=modal-box><span class=close>&#215;</span><div class=modal-container><div class=modal-header><div class=modal-header-img-container style=background-color:#26205e><img data-src=/images/time.jpg class=lazyload alt="AtCash Time"></div></div><div class=modal-content><h2>AtCash Time</h2><article class=entry-content><h2 id=summary>Summary</h2><p>Atcash Time provides a service to verify users Identity. Validate passports, driver&rsquo;s licenses, social. security numbers and more. TIME FOR IDENTITY.</p><h2 id=responsibilities>Responsibilities</h2><p>I was responsible for</p><ul><li>Developing REST APIs using Express.js</li><li>Developing WebSocket based realtime APIs</li><li>Developing WebSocket and webRTC for video call</li><li>Developing ui using React and Redux</li><li>Collaborating with Android and IOS teams to provide support and guidance for
 integrating APIs</li></ul><h2 id=technologies>Technologies</h2><ul><li>Node.js/Express.js</li><li>Socket.io for websockets</li><li>WebRTC</li><li>Mongodb for persistence</li><li>Redis for supporting sessions and websockets</li><li>React.js</li></ul></article><h3><a href=https://www.atcash.com/identity>View</a></h3></div></div></div></div><div id=modal-b944 class=modal><div class=modal-box><span class=close>&#215;</span><div class=modal-container><div class=modal-header><div class=modal-header-img-container style=background-color:#a30f44><img data-src=/images/pharmacy.png class=lazyload alt="Pharmacy App - is a mobile app and built for android and ios. In this app users can book pharmacies."></div></div><div class=modal-content><h2>Aduro Pharmacy App</h2><article class=entry-content><h2 id=summary>Summary</h2><p>Pharmacy App is a mobile app and built for android and ios. In this app users can book pharmacies then app finds the nearby delivery agents (around rage in 3 km). When agents accept the booking then the app holds the delivery amount. This app uses the credit score (Aduro money) as well.</p><h2 id=responsibilities>Responsibilities</h2><p>I was responsible for</p><ul><li>Developing REST APIs using Hapi.js</li><li>Developing WebSocket based realtime APIs</li><li>Developing an admin panel using React and Redux</li><li>Collaborating with Android and IOS teams to provide support and guidance for
 integrating APIs</li></ul><h2 id=technologies>Technologies</h2><ul><li>Node.js/Hapi.js</li><li>Socket.io for websockets</li><li>Mongodb for persistence</li><li>Redis for supporting sessions and websockets</li><li>React.js for admin panel</li></ul></article></div></div></div></div><div id=modal-39a1 class=modal><div class=modal-box><span class=close>&#215;</span><div class=modal-container><div class=modal-header><div class=modal-header-img-container style=background-color:#fefefe><img data-src=/images/taxi.png class=lazyload alt="Ron Taxi - app is just like uber and ola"></div></div><div class=modal-content><h2>Ron Taxi</h2><article class=entry-content><h2 id=summary>Summary</h2><p>&ldquo;Ron taxi&rdquo; was a client project i did during my full time employment at yapapp. it
