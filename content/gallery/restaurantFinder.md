@@ -9,7 +9,6 @@ link2 = ""
 category = ["Professional Project"]
 tag = ["Web Development", "API Development", "React", "Redux"]
 projectDate = "Early 2020"
-
 +++
 
 ## Summary

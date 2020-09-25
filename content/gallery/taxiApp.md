@@ -18,7 +18,7 @@ was done on a very tight deadline under minimum supervision. It is like a clone 
 
 ## Responsibilities
 
-i was responsible for
+I was responsible for
 
 - developing rest apis using hapi.js
 - developing websocket based realtime apis
@@ -27,8 +27,8 @@ i was responsible for
   integrating apis
 
 ## Technologies
-- node.js/hapi.js
-- socket.io for websockets
-- mongodb for persistence
-- redis for supporting sessions and websockets
-- react.js for admin panel
+- Node.js/hapi.js
+- Socket.io for websockets
+- Mongodb for persistence
+- Redis for supporting sessions and websockets
+- React.js for admin panel

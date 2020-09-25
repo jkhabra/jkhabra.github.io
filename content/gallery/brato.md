@@ -17,7 +17,7 @@ Brato App offers a fun and mindful way to get all that you desire. It’s a way 
 
 ## Responsibilities
 
-i was responsible for
+I was responsible for
 
 - developing rest apis using Python Flask
 - developing an admin panel using react and redux
