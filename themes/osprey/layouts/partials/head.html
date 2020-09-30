@@ -13,52 +13,54 @@
     {{ template "_internal/google_analytics_async.html" . }}
   {{ end }}
 
-  <title>
-    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-    {{ if .IsHome -}}
+    <title>
+      {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+      {{ if .IsHome -}}
       {{ .Site.Title }}
-    {{- else if .Params.heading -}}
+      {{- else if .Params.heading -}}
       {{ .Params.heading }}
-    {{- else -}}
+      {{- else -}}
       {{ .Title }} | {{ .Site.Title }}
-    {{- end }}
-  </title>
+      {{- end }}
+    </title>
 
-  <meta name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end}}">
+    <meta name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end}}">
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="referrer" content="no-referrer-when-downgrade">
-  <base href="{{ .Site.BaseURL }}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <base href="{{ .Site.BaseURL }}">
 
-  {{ if .Description }}
+    {{ if .Description }}
     <meta name="description" content="{{ .Description }}">
-  {{ else if .Site.Params.description }}
+    {{ else if .Site.Params.description }}
     <meta name="description" content="{{ .Site.Params.description }}">
-  {{ else if .Summary }}
+    {{ else if .Summary }}
     <meta name="description" content="{{ .Summary }}">
-  {{ end }}
+    {{ end }}
 
-  {{ if .Site.Params.author }}
+    {{ if .Site.Params.author }}
     <meta name="author" content="{{ .Site.Params.author }}">
-  {{ end }}
+    {{ end }}
 
-  {{ if .Site.Params.twitter }}
+    {{ if .Site.Params.twitter }}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
     <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
-  {{ end }}
+    {{ end }}
 
-  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
 
-  {{ if .Site.Params.opengraphImage}}
+    {{ if .Params.featureImage}}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.featureImage}}">
+    {{ else if .Site.Params.opengraphImage }}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.opengraphImage}}">
-  {{ end }}
+    {{ end }}
 
   {{ if .Description }}
     <meta name="og:description" content="{{ .Description }}">
@@ -74,7 +76,7 @@
   {{ end }}
 
   <link rel="canonical" href="{{ .Permalink }}">
-  
+
   {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
   {{ end }}
