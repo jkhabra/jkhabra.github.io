@@ -1,5 +1,5 @@
 +++
-title = "I'm Jay Khabra"
+title = "I'm Jatinder Khabra"
 date = 2020-08-28T12:36:41-07:00
 draft = false
 +++

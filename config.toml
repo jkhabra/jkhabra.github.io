@@ -1,4 +1,4 @@
-title = "Jay Khabra - Full Stack Developer"
+title = "Jatinder Khabra - Full Stack Developer"
 baseURL = ""
 tags = ["web developer", "mohali web developer", "node developer", "javascript developer", "react developer", "python developer", "express developer", "web developer portfolio"]
 languageCode = "en-US"
@@ -9,8 +9,8 @@ googleAnalytics = "UA-175668351-2"
 disqusShortname = "jkhabra"
 
 [Params]
-  tagline = "Jay Khabra"
-  author = "Jay Khabra"
+  tagline = "Jatinder Khabra"
+  author = "Jatinder Khabra"
   description = "Full-stack web developer and UI/UX enthusiast based in Mohali, Punjabi."
   logoBig = "/images/jay.png"
   logoSmall = "/images/jay.png"

@@ -11,6 +11,7 @@ date = "2020-09-24"
 categories = [
     "Development",
 ]
+featureImage = "images/githubActons.png"
 +++
 
 I have created this site in [Hugo](https://gohugo.io/). The purpose of this site
