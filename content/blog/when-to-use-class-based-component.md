@@ -9,6 +9,7 @@ tags = [
     "react",
     "functional programming",
     "development",
+    "Js"
 ]
 date = "2022-08-26"
 categories = [
